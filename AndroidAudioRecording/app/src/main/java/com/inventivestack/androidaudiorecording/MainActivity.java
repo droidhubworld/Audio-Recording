@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnCom
     public static final int RequestPermissionCode = 1;
     private static final String AUDIO_RECORDER_FILE_EXT_3GP = ".3gp";
     private static final String AUDIO_RECORDER_FILE_EXT_MP4 = ".mp4";
+    private static final String AUDIO_RECORDER_FILE_EXT_MP3 = ".mp3";
     private static final String AUDIO_RECORDER_FOLDER = "AudioRecorder";
 
     private MediaRecorder recorder = null;
@@ -32,7 +33,8 @@ public class MainActivity extends AppCompatActivity implements MediaPlayer.OnCom
     private int output_formats[] = {MediaRecorder.OutputFormat.MPEG_4,
             MediaRecorder.OutputFormat.THREE_GPP};
     private String file_exts[] = {AUDIO_RECORDER_FILE_EXT_MP4,
-            AUDIO_RECORDER_FILE_EXT_3GP};
+            AUDIO_RECORDER_FILE_EXT_3GP,
+            AUDIO_RECORDER_FILE_EXT_MP3};
 
     private boolean isAudioRecorded = false;
     private String filePath = null;
